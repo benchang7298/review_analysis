@@ -16,4 +16,12 @@ for d in data:
      
 print('Avarge length of rreview is', sum_len / len(data))
 
+new = []
+for d in data:
+    if len(d) < 100:
+        new.append(d)
+
+print('total', len(new), 'data length < 100')        
 print('----------')
+print(new[0])
+print(new[1])
